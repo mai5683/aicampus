@@ -55,7 +55,7 @@ ticket_price = basic - discount
 # 출력
 
 print(f"나이 : {age}세")
-print(f"기본가격 : {15000}원")
+print(f"기본가격 : {basic}원")
 print(f"할인율 : {rate}%")
 print(f"할인금액 : {discount}원")
 print(f"최종 결제금액 : {ticket_price}원")
