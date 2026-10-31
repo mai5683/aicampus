@@ -37,6 +37,7 @@ HINT
 
 import random
 answer = random.randint(1, 1000)
+correct = False
 
 for i in range(10) :
     number = int(input("정답 입력 : "))
@@ -46,7 +47,12 @@ for i in range(10) :
         print("다운(DOWN)!")
     else :
         print("정답!")
+        correct = True
         break
 
-if answer == number :
-    print("프로그램을 종료합니다.")
+if correct == True :
+    print("정답을 맞혔습니다.")
+else :
+    print("정답을 맞히지 못했습니다.")
+
+print("프로그램을 종료합니다.")
