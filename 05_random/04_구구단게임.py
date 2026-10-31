@@ -55,11 +55,11 @@ for i in range(question) :
         combo += 1
         score += 10 * combo
     else :
-        wrong +=1
+        wrong += 1
         score -= 5
         combo = 0
-        if score < 0 :
-            score = 0
+    if score < 0 :
+        score = 0
 
 print()
 
@@ -68,3 +68,4 @@ print(f"맞힌 문제 : {correct} 개")
 print(f"틀린 문제 : {wrong} 개")
 print(f"점수 : {score} 점")
 print("게임을 종료합니다.")
+
