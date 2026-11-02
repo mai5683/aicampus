@@ -47,10 +47,10 @@ for money in daily :
         print("금액 :", money, "원")
 
 # 6.
-rank = 1                                            # 최초 랭크를 1로 가정
-# target = daily[0]                              # 비교할 점수를 보관
-for money in daily :                            # 모든 금액을 비교하며
-    if money > daily[0] :                       # 더 큰 금액을 발견하면
-        rank += 1                                  # 등수를 1 증가 (뒤로 밀어내기)
+rank = 1                          # 최초 랭크를 1로 가정
+# target = daily[0]               # 비교할 점수를 보관
+for money in daily :              # 모든 금액을 비교하며
+    if money > daily[0] :         # 더 큰 금액을 발견하면
+        rank += 1                 # 등수를 1 증가 (뒤로 밀어내기)
 
 print(int(f"월요일에 사용한 금액은 이번 주 중에서 {rank}등으로 많습니다."))
