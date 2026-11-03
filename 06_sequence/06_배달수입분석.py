@@ -20,7 +20,7 @@
 
 delivery = []
 
-for i in range(10) :
+for i in range(8) :
     income = int(input("배달 수입 : "))
     delivery.append(income)
 total = sum(delivery)
