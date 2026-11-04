@@ -18,6 +18,11 @@
 curse = ["신발끈", "시베리아", "수박씨", "개나리", "십장생", "십자수", "조카", "주옥"]
 
 chat = input("채팅 : ")
+filter_chat = chat
 
 for word in curse:
-    chat.find(word)
+    word_index = chat.find(word)
+    if word_index != -1 :
+       filter_chat = chat.replace(word, "*" * len(word))
+
+print(filter_chat)
