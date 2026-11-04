@@ -32,23 +32,35 @@ def receipt(price, pay):
     change = change % 50000
     ten_thousand_won = change // 10000
     change = change % 10000
+    five_thousand_won = change // 5000
+    change = change % 5000
     one_thousand_won = change // 1000
     change = change % 1000
+    five_hundred_won = change // 500
+    change = change % 500
     one_hundred_won = change // 100
     change = change % 100
     fifty_won = change // 50
     change = change % 50
+    ten_won = change // 10
+    change = change % 10
 
     if fifty_thousand_won > 0 :
         print(f" +-- 50000원짜리 {fifty_thousand_won}장")
     if ten_thousand_won > 0 :
         print(f" +-- 10000원짜리 {ten_thousand_won}장")
+    if five_thousand_won > 0 :
+        print(f" +-- 5000원짜리 {five_thousand_won}장")
     if one_thousand_won > 0 :
         print(f" +-- 1000원짜리 {one_thousand_won}장")
+    if five_hundred_won > 0:
+        print(f" +-- 500원짜리 {five_hundred_won}장")
     if one_hundred_won > 0 :
         print(f" +-- 100원짜리 {one_hundred_won}개")
     if fifty_won > 0 :
         print(f" +-- 50원짜리 {fifty_won}개")
+    if ten_won > 0 :
+        print(f" +-- 10원짜리 {ten_won}개")
 
 receipt(5650, 10000)
 

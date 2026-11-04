@@ -43,7 +43,9 @@ show_menu()
 print("-"*30)
 print()
 
-def show_price(dduck, fried, sundae):
+# def show_price(dduck, fried, sundae):  # 기본값 미지정
+# def show_price(rice=0, fried=0, sundae=0):  # 기본값 지정 (일부 항목이 누락될 수 있음)
+def show_price(dduck=0, fried=0, sundae=0):  # 기본값 지정
     # 이 함수에서만 사용할 변수를 얼마든지 만들 수 있다.
     # 지역 변수(local variable)
     dduck_toal = dduck * 3000
@@ -63,4 +65,5 @@ def show_price(dduck, fried, sundae):
 
 show_price(2,1,1)
 print()
-show_price(0,2,1)
+show_price(dduck=1)
+show_price(fried=1,sundae=2)
