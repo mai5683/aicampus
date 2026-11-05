@@ -7,6 +7,7 @@
 예외의 이름이 나오게 된다.
 
 이 이름을 알아야 처리가 가능하다.
+(ZeroDivisionError, ValueError)
 """
 
 # (ex) 1/N 계산기
