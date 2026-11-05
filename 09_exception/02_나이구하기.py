@@ -17,10 +17,6 @@
 
 import re
 
-year = today.year
-month = today.month
-day = today.day
-
 birth = input("생년월일 : ")
 
 regexp = r"^(19[0-9]{2}|20[0-9]{2})-(0[1-9]|1[0-2])-(0[1-9]|1[0-9]|2[0-9]|3[01])$"
