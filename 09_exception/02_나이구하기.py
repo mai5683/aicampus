@@ -23,12 +23,20 @@ birth = input("생년월일 : ")
 regexp = r"^(19[0-9]{2}|20[0-9]{2})-(0[1-9]|1[0-2])-(0[1-9]|1[0-9]|2[0-9]|3[01])$"
 result = re.fullmatch(regexp, birth)
 
-if result is not None:
-    korean_age = 2026 - int(birth[:4]) + 1
-    if 11 >= int(birth[5:7]) :
-        global_age = korean_age - 1
-    else :
-        global_age = korean_age - 2
+try :
+    if result is not None:
+        korean_age = 2026 - int(birth[:4]) + 1
+        if 11 >= int(birth[5:7]):
+            global_age = korean_age - 1
 
-else :
-    print("정보 입력이 잘못되었습니다.")
+        else:
+            global_age = korean_age - 2
+
+        print(f"한국나이 : {korean_age}세")
+        print(f"만나이 : {global_age}세")
+
+    else:
+        raise Exception
+
+except Exception :
+    print("프로그램에서 오류가 발생했습니다")
