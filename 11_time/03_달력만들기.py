@@ -32,3 +32,34 @@ https://mwpt.mma.go.kr/caisBMHS/gtmd/calendar/caisNormalCalPopup.do
 
 
 
+import calendar
+from datetime import timedelta
+
+year = int(input("연도 입력 : "))
+month = int(input("월 입력 : "))
+
+print("-" * 27 + "\n" + f"\t\t<{year}년 {month}월>\t\t" + "\n" + "-" * 27)
+
+weekdays = ["일", "월", "화", "수", "목", "금", "토"]
+print(f"{weekdays[0]}\t{weekdays[1]}\t{weekdays[2]}\t{weekdays[3]}\t{weekdays[4]}\t{weekdays[5]}\t{weekdays[6]}")
+
+cal = calendar.Calendar(firstweekday=6)
+month_days = cal.monthdatescalendar(year, month)
+
+day_list = []
+
+for week_days in month_days:
+    for day in week_days:
+        day_list.append(day)
+
+while len(day_list) < 42:
+    next_date = day_list[-1] + timedelta(days=1)
+    day_list.append(next_date)
+
+# 7개씩 출력
+for i in range(0, 42, 7):
+    week = day_list[i:i+7]
+    print(f"{week[0].day}\t{week[1].day}\t{week[2].day}\t{week[3].day}\t{week[4].day}\t{week[5].day}\t{week[6].day}")
+
+print("-" * 27)
+

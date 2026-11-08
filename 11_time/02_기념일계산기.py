@@ -29,11 +29,29 @@ D + 730 : yyyy-MM-dd
 """
 
 
-from datetime import date, timedelta
 
-today = date.today()
+from datetime import datetime, timedelta
 
-user = input(f"날짜 입력 : {date}")
+user = input("날짜 입력(YYYY-MM-DD) : ")
+years = int(input("몇 년까지 계산할까요? : "))
+date = datetime.strptime(user, "%Y-%m-%d")
+
+dates = []
+
+for i in range(1, (years * 365) // 100 + 1):
+    result100 = date + timedelta(days=100 * i)
+    dates.append((100 * i, result100))
+
+for i in range(1, years + 1):
+    result365 = date + timedelta(days=365 * i)
+    dates.append((365 * i, result365))
+
+dates.sort()
+
+for day in dates:
+    print(f"D + {day[0]} : {day[1].strftime('%Y-%m-%d')}")
+
+
 
 
 
