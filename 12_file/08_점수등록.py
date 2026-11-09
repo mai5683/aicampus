@@ -1,0 +1,24 @@
+"""
+CSV 실습
+다음 데이터를 파일을 만들어 저장하고 불러와서 출력해보세요
+
+08_점수등록.py에서는 csv/scores.csv에 제시된 점수를 등록하는 코드를 작성하세요
+08_점수분석.py에서는 csv/scores.csv에 제시된 점수를 읽어들여 다음을 구하세요
+총 평균
+
+이름은 name, 국어는 kor, 영어는 eng, 수학은 mat라는 이름을 사용하세요
+"""
+
+import csv
+
+scores = [
+    ["name", "kor", "eng", "mat"],
+    ["김철수", 85, 90, 78],
+    ["이영희", 92, 88, 95],
+    ["박민수", 76, 82, 89]
+]
+
+with open("csv/scores.csv", "w",
+          encoding="utf-8-sig", newline="") as file:
+    writer = csv.writer(file)
+    writer.writerows(scores)
