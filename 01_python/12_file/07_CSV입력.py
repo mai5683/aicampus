@@ -10,7 +10,7 @@ import csv
 
 monsters = []
 with open("csv/monsters.csv", "r",
-            encoding="utf-8-sig", newline="") as file:
+          encoding="utf-8-sig", newline="") as file:
     reader = csv.reader(file)   # csv 입력 도구 생성
     for row in reader:
         monsters.append(row)

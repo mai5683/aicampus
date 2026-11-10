@@ -15,7 +15,7 @@ total = 0
 count = 0
 
 with open("csv/scores.csv", "r",
-            encoding="utf-8-sig", newline="") as file:
+          encoding="utf-8-sig", newline="") as file:
     reader = csv.reader(file)   # csv 입력 도구 생성
     for row in reader:      # 한 줄씩
         for data in row:    # 한 칸씩
