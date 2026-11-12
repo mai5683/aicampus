@@ -23,6 +23,7 @@ gray = gray.round().astype(np.uint8)
 
 # opencv에서 제공하는 명령을 사용해서 처리
 gray2 = cv2.cvtColor(color, cv2.COLOR_BGR2GRAY)
+# color2 = cv2.cvtColor(gray2, cv2.COLOR_GRAY2BGR)
 
 # 색상 반전 (color를 변경)
 # reverse = 밝은 걸 어둡게, 어두운 걸 밝게
