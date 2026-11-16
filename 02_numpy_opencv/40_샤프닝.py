@@ -38,6 +38,10 @@ kernel = np.array([
 #     [-1, -1, -1]
 # ], dtype=np.float32)
 sharp = cv2.filter2D(image, -1, kernel)  # -1은 원본과 같은 깊이를 유지하라는 의미
+# sharp = cv2.filter2D(image, cv2.CV_8U, kernel)  # = np.uint8
+# sharp = cv2.filter2D(image, cv.CV_16S, kernel)  # = np.uint16
+# sharp = cv2.filter2D(image, cv.CV_32F, kernel)  # = np.float32
+# sharp = cv2.filter2D(image, cv.CV_64F, kernel)  # = np.float64
 
 # 이미지 표시
 cv2.imshow("image", image)
