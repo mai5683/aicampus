@@ -23,7 +23,7 @@ def member_join():
 
 
 window = tk.Tk()
-window.title("키패드 만들기")
+window.title("회원 가입")
 window.geometry("600x450")
 
 font_main = ("Binggrae", 16)
