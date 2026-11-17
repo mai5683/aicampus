@@ -8,7 +8,7 @@ def reset():
     entry_pw.delete(0, tk.END)
     entry_pw_again.delete(0, tk.END)
 
-    result_label.config(text="결과 메시지가 나올 위치")
+    result_label.config(text="회원 가입을 진행하세요")
 
 def member_join():
     id = entry_id.get()
@@ -82,7 +82,7 @@ btn_join.grid(row=0, column=1, padx=5, sticky="ew")
 
 
 ##--------------------------------------------------------------------------
-result_label = tk.Label(window, text="결과 메세지가 나올 위치", font=font_main)
+result_label = tk.Label(window, text="회원 가입을 진행하세요", font=font_main)
 result_label.pack(fill="x", padx=25, pady=15)
 
 
