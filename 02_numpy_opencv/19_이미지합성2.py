@@ -15,8 +15,8 @@ import cv2
 # 이미지 읽기
 # (Tip) 경로에서 .은 현재를 의미하고 ..은 상위 경로를 의미
 # image1 = cv2.imread("images/plus1.jpg")
-image1 = cv2.imread("./images/plus1.jpg")   # .은 현재 위치를 의미
-image2 = cv2.imread("images/plus2.jpg")
+image1 = cv2.imread("../03_tkinter/images/plus1.jpg")   # .은 현재 위치를 의미
+image2 = cv2.imread("../03_tkinter/images/plus2.jpg")
 
 if image1 is None or image2 is None:
     print("이미지가 존재하지 않습니다")

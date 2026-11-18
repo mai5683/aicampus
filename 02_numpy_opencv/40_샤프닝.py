@@ -14,7 +14,7 @@
 import cv2
 import numpy as np
 
-image = cv2.imread("./images/tilted.png")
+image = cv2.imread("../03_tkinter/images/tilted.png")
 if image is None:
     print("이미지 없음")
     exit(1)

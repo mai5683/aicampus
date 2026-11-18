@@ -9,7 +9,7 @@ import numpy as np
 import cv2
 
 # 이미지 읽기
-image = cv2.imread("./images/strawberry.png")
+image = cv2.imread("../03_tkinter/images/strawberry.png")
 
 # 일반적인 전처리 : grayscale → (blur) → binarize(otsu) → morphology
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)

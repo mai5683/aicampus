@@ -11,10 +11,10 @@ image = cv2.imread("파일명", cv2.IMREAD_GRAYSCALE)
 import numpy as np
 import cv2
 
-image1 = cv2.imread("./images/plus1.jpg")   # 컬러
+image1 = cv2.imread("../03_tkinter/images/plus1.jpg")   # 컬러
 # image1 = cv2.imread("./images/plus1.jpg", cv2.IMREAD_COLOR_BGR)    # BGR 방식
 # image1 = cv2.imread("./images/plus1.jpg", cv2.IMREAD_UNCHANGED)    # 이미지 세팅
-image2 = cv2.imread("./images/plus2.jpg", cv2.IMREAD_GRAYSCALE)      # grayscale
+image2 = cv2.imread("../03_tkinter/images/plus2.jpg", cv2.IMREAD_GRAYSCALE)      # grayscale
 
 # 이미지 합성
 h1, w1 = (image1.shape[0], image1.shape[1])     # image1.shape[:2] 로 간추릴 수 있다.

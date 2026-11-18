@@ -21,7 +21,7 @@ import numpy as np
 import cv2
 
 # 이미지 읽기
-origin = cv2.imread("./images/sample.jpg")
+origin = cv2.imread("../03_tkinter/images/sample.jpg")
 
 # 이미지 분리
 mosaic = origin.copy()

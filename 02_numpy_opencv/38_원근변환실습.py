@@ -5,7 +5,7 @@
 import numpy as np
 import cv2
 
-image = cv2.imread("./images/tilted2.png")
+image = cv2.imread("../03_tkinter/images/tilted2.png")
 if image is None:
     print("이미지 없음")
     exit(1)

@@ -18,7 +18,7 @@ cv2.imwrite("저장위치", 이미지)
 import numpy as np
 import cv2
 
-image = cv2.imread("./images/plus1.jpg")
+image = cv2.imread("../03_tkinter/images/plus1.jpg")
 
 
 
@@ -32,5 +32,5 @@ cv2.imshow("image", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-cv2.imwrite("./images/mosaic.jpg", image)
+cv2.imwrite("../03_tkinter/images/mosaic.jpg", image)
 

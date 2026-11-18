@@ -17,5 +17,5 @@ cv2.imshow("color_noise", color_noise)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-cv2.imwrite("./images/color_noise.jpg", color_noise)
+cv2.imwrite("../03_tkinter/images/color_noise.jpg", color_noise)
 

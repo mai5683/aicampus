@@ -8,7 +8,7 @@
 import numpy as np
 import cv2
 
-image = cv2.imread("./images/apple.png")
+image = cv2.imread("../03_tkinter/images/apple.png")
 if image is None:
     print("이미지가 존재하지 않습니다")
     exit(1)

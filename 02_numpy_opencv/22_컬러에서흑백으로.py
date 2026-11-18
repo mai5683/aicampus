@@ -9,7 +9,7 @@ import numpy as np
 import cv2
 
 # 이미지 읽기
-color = cv2.imread("./images/cat.jpg")
+color = cv2.imread("../03_tkinter/images/cat.jpg")
 
 # 컬러를 흑백으로 변환
 # 직접 : 0.299R + 0.587G + 0.114B

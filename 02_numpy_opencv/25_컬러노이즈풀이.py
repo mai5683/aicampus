@@ -25,5 +25,5 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # 이미지 저장
-cv2.imwrite("./images/color_noise1.jpg", noise)
+cv2.imwrite("../03_tkinter/images/color_noise1.jpg", noise)
 

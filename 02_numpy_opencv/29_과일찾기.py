@@ -14,7 +14,7 @@ import cv2
 import numpy as np
 
 # 이미지 읽기
-fruit = cv2.imread("./images/strawberry.png")
+fruit = cv2.imread("../03_tkinter/images/strawberry.png")
 # fruit = cv2.imread("./images/banana.png")
 # fruit = cv2.imread("./images/pear.png")
 # fruit = cv2.imread("./images/grape.png")

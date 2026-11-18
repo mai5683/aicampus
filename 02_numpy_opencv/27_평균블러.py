@@ -11,7 +11,7 @@ import numpy as np
 import cv2
 
 # 이미지 읽기 (노이즈가 있는 이미지 선택)
-noise = cv2.imread("./images/cat_noise1.jpg")
+noise = cv2.imread("../03_tkinter/images/cat_noise1.jpg")
 
 # 노이즈 제거 (평균 블러)
 

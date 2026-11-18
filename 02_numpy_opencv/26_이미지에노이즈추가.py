@@ -17,7 +17,7 @@ import numpy as np
 import cv2
 
 # 이미지 읽기
-origin = cv2.imread("./images/cat.jpg")
+origin = cv2.imread("../03_tkinter/images/cat.jpg")
 
 # 노이즈 생성
 print(origin.shape)     # (1024, 1024, 3)
@@ -39,8 +39,8 @@ result2 = origin.copy() + noise2
 result2 = np.clip(result2, 0, 255).astype(np.uint8)
 
 # 저장 및 출력
-cv2.imwrite("./images/cat_noise1.jpg", result1)
-cv2.imwrite("./images/cat_noise2.jpg", result2)
+cv2.imwrite("../03_tkinter/images/cat_noise1.jpg", result1)
+cv2.imwrite("../03_tkinter/images/cat_noise2.jpg", result2)
 
 cv2.imshow("origin", origin)
 cv2.imshow("result1", result1)

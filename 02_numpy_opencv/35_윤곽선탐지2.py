@@ -6,7 +6,7 @@ import numpy as np
 import cv2
 
 # 이미지 생성
-image = cv2.imread("./images/strawberry.png")
+image = cv2.imread("../03_tkinter/images/strawberry.png")
 if image is None:
     print("이미지 없음")
     exit(-1)

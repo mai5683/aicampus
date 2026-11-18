@@ -5,7 +5,7 @@
 import cv2
 
 # 이미지 읽기 - cv2.imread("경로"
-image = cv2.imread("images/flowers.jpg")
+image = cv2.imread("../03_tkinter/images/flowers.jpg")
 # print(image)
 # print(type(image))    # numpy.ndarray
 

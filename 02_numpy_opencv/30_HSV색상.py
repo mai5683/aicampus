@@ -9,7 +9,7 @@ import cv2
 # fruit = cv2.imread("./images/strawberry.png")
 # fruit = cv2.imread("./images/grape.png")
 # fruit = cv2.imread("./images/pear.png")
-fruit = cv2.imread("./images/banana.png")
+fruit = cv2.imread("../03_tkinter/images/banana.png")
 
 if fruit is None:
     print("이미지가 존재하지 않습니다")
