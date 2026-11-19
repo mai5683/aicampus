@@ -67,7 +67,11 @@ def resize_thumbnail(event):
     label_preview.thumb = image_tkinter
 #------------------------------------------------
 def convert_gray(event=None):
-    print("흑백 변환")
+    if label_preview.image is None:
+        return
+    image_array = np.array(label_preview.image)
+    gray_image = cv2.cvtColor(image_array, cv2.COLOR_RGB2GRAY)
+
 def convert_otsu(event=None):
     print("이진화(OTSU)")
 def apply_blur(event=None):
@@ -78,6 +82,9 @@ def apply_canny(event=None):
     print("캐니")
 def undo(event=None):
     print("되돌리기")
+
+###############################################################
+# ...................................
 
 #------------------------------------------------
 # 창 생성
