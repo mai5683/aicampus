@@ -92,3 +92,4 @@ print(df.loc[condition, ["재고", "판매량"]])
 print("판매 가능한 종류 :", len(df.loc[condition]))
 
 
+
