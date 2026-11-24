@@ -114,3 +114,5 @@ condition = df["잔여좌석"] == df["잔여좌석"].min()
 print(df[condition], "\n")
 
 
+
+

@@ -101,3 +101,4 @@ print(high_orders, "\n")
 print(high_orders.groupby("지점")["주문금액"].sum())
 # print(completed[condition].groupby("지점")["주문금액"].sum())
 
+

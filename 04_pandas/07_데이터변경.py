@@ -85,3 +85,4 @@ print(df,"\n")
 
 # 여러 항목이나 행을 지우고 싶다면 index, columns에 list 전달
 
+
