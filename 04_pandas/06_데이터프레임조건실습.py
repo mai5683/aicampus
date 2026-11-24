@@ -69,14 +69,17 @@ print(df.loc[condition].index, "\n")
 # 현재 판매 가능한 상품이 몇 종류인지 출력하고, 해당 상품들의 평균 가격을 계산하세요.
 condition = df["재고"] > 0
 print("판매 가능한 종류 :", len(df.loc[condition]))
-print("평균 가격 :", df.loc[condition, "가격"].mean())
+print("평균 가격 :", df.loc[condition, "가격"].mean(), "\n")
 
 # **8. 특정 위치의 데이터 조회**
 # 상품의 이름을 사용하지 않고 숫자 위치만 이용하세요.
 # - 세 번째 상품의 모든 정보 출력
 # - 마지막 상품의 가격 출력
 # - 두 번째부터 다섯 번째 상품까지의 가격과 재고 출력
-#
+print(df.iloc[2])
+print(df.iloc[-1] ["가격"])
+print(df.iloc[1:5][["가격", "재고"]], "\n")
+
 # ## 추가 도전 문제
 #
 # **9. 긴급 발주 대상 선정**
@@ -84,3 +87,9 @@ print("평균 가격 :", df.loc[condition, "가격"].mean())
 # - 판매량이 30개 이상
 # - 현재 재고가 5개 미만
 # 긴급 발주가 필요한 상품들의 재고와 판매량만 출력하고, 해당 상품이 몇 종류인지 계산하세요.
+condition = (df["판매량"] >= 30) & (df["재고"] < 5)
+print(df.loc[condition, ["재고", "판매량"]])
+print("판매 가능한 종류 :", len(df.loc[condition]))
+
+
+
