@@ -102,3 +102,8 @@ print(high_orders.groupby("지점")["주문금액"].sum())
 # print(completed[condition].groupby("지점")["주문금액"].sum())
 
 
+print(df.head())    # 첫 5개
+print(df.head(2))   # 첫 2개
+print(df.tail())    # 마지막 5개
+print(df.tail(2))   # 마지막 2개
+
