@@ -11,6 +11,12 @@
 
 import pandas as pd
 
+# pd.set_option("display.max_rows", None) # 모든 행 출력
+# pd.set_option("display.max_columns", None) # 모든 열 출력
+# pd.set_option("display.max_colwidth", None) # 긴 문자열 중간 생략 방지
+# pd.set_option("display.width", None) # 출력 너비 자동 설정
+
+
 df = pd.read_csv("./data/products.csv")
 print(df)
 print("-"*70, "\n")
