@@ -48,10 +48,3 @@ with pd.ExcelWriter(
     df.to_excel(writer, sheet_name="분석결과", index=False)
 
 
-
-
-
-
-
-
-
